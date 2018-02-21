@@ -15,7 +15,7 @@
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs",
     "build:iconfont": "node build/build_iconfont.js",
-    "build:theme": "cd ./packages/theme-future/ && npm run build && cd - && cp -r ./packages/theme-future/lib/* ./src/assets/theme-future/",
+    "build:theme": "cd ./packages/theme-future/ && npm run build && cd - && mkdir -p ./src/assets/theme-future/ && cp -r ./packages/theme-future/lib/* ./src/assets/theme-future/",
     "build": "node build/build.js"
   },
   "dependencies": {
