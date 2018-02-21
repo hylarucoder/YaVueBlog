@@ -1,0 +1,74 @@
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('./iconfont.eot');
+  src: url('./iconfont.eot?#iefix') format('embedded-opentype'),
+  url('./iconfont.woff') format('woff'),
+  url('./iconfont.ttf') format('truetype'),
+  url('./iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="iconfont-"], [class*=" iconfont-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'iconfont' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.iconfont-github:before {
+  content: "\E914";
+}
+    
+
+.iconfont-heart:before {
+  content: "\E915";
+}
+    
+
+.iconfont-jianshu:before {
+  content: "\E916";
+}
+    
+
+.iconfont-juejin:before {
+  content: "\E917";
+}
+    
+
+.iconfont-python:before {
+  content: "\E918";
+}
+    
+
+.iconfont-reading:before {
+  content: "\E919";
+}
+    
+
+.iconfont-wordcount:before {
+  content: "\E91A";
+}
+    
+
+.iconfont-zhihu:before {
+  content: "\E91B";
+}
+    

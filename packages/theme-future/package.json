@@ -1,0 +1,22 @@
+{
+  "name": "theme-future",
+  "version": "1.0.0",
+  "main": "lib/index.css",
+  "style": "lib/index.css",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "scripts": {
+    "build": "gulp build",
+    "build:theme": "gulp build"
+  },
+  "author": "twocucao@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-sass": "^3.1.0"
+  }
+}
