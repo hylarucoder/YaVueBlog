@@ -1,8 +1,7 @@
 <template>
   <div class="p-article-post">
     <div class="columns">
-      <div class="col-1 hide-xl">
-      </div>
+      <div class="col-1 hide-xl"></div>
       <div class="col-2 col-xl-3">
         <div class="g-sidebar">
           <h4>本文目录</h4>
@@ -10,7 +9,10 @@
         </div>
       </div>
       <div class="col-6 col-xl-8">
-        <ArticleCard :article="article" @articleTocReady="initArticleToc"></ArticleCard>
+        <ArticleCard
+          :article="article"
+          @articleTocReady="initArticleToc"
+        ></ArticleCard>
       </div>
       <div class="col-2 col-xl-3">
         <div class="g-sidebar">
@@ -29,13 +31,21 @@
               您可以关注我的公众号
             </p>
             <div>
-              <img src="/static/images/mp_wechat.jpg" alt="" style="width: 200px">
+              <img
+                src="/static/images/mp_wechat.jpg"
+                alt=""
+                style="width: 200px;"
+              />
             </div>
             <p>
               也可以扫描二维码进行投喂
             </p>
             <div>
-              <img src="/static/images/tips_wechat.jpeg" alt="" style="width: 200px">
+              <img
+                src="/static/images/tips_wechat.jpeg"
+                alt=""
+                style="width: 200px;"
+              />
             </div>
             <p>
               听说关注或者进行投喂的人,技术都越来越牛咯.
@@ -43,46 +53,43 @@
           </div>
         </div>
       </div>
-      <div class="col-1 hide-xl">
-      </div>
+      <div class="col-1 hide-xl"></div>
     </div>
   </div>
 </template>
 
 <script>
-import {fetchBlogPost} from '../../api/blog';
+import { fetchBlogPost } from "../../api/blog"
 
 export default {
-  name: 'BlogPage',
+  name: "BlogPage",
   data() {
     return {
-      article: '',
-      articleToc: undefined
+      article: "",
+      articleToc: undefined,
     }
   },
   watch: {
-    '$route.params': function () {
+    "$route.params": function () {
       this.initArticle()
-    }
+    },
   },
   created() {
     this.initArticle()
   },
-  mounted() {
-  },
+  mounted() {},
   methods: {
     initArticleToc: function (v) {
-      this.articleToc = v;
+      this.articleToc = v
     },
     initArticle: function () {
-      let title = this.$route.params.title;
+      let title = this.$route.params.title
       fetchBlogPost(title).then((res) => {
-        this.article = res;
+        this.article = res
       })
-    }
-  }
+    },
+  },
 }
 </script>
 
-<style>
-</style>
+<style></style>

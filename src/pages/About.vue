@@ -22,15 +22,15 @@
 </template>
 
 <script>
-import BasicInfo from './About/BasicInfo.vue'
-import SkillInfo from './About/SkillInfo.vue'
-import WorkInfo from './About/WorkInfo.vue'
-import ProjectInfo from './About/ProjectInfo.vue'
-import HobbyInfo from './About/HobbyInfo.vue'
-import HobbyProjectInfo from './About/HobbyProjectInfo.vue'
+import BasicInfo from "./About/BasicInfo.vue"
+import SkillInfo from "./About/SkillInfo.vue"
+import WorkInfo from "./About/WorkInfo.vue"
+import ProjectInfo from "./About/ProjectInfo.vue"
+import HobbyInfo from "./About/HobbyInfo.vue"
+import HobbyProjectInfo from "./About/HobbyProjectInfo.vue"
 
 export default {
-  name: 'AboutPage',
+  name: "AboutPage",
   components: {
     BasicInfo,
     SkillInfo,
@@ -41,11 +41,10 @@ export default {
   },
   data() {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: "Welcome to Your Vue.js App",
     }
-  }
+  },
 }
 </script>
 
-<style>
-</style>
+<style></style>

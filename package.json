@@ -8,16 +8,7 @@
     "start": "vite",
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview",
-    "dev:new": "webpack-dashboard -- webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
-    "dev:theme": "cd ./packages/theme-future && watchmedo shell-command -p '*.scss' -c 'npm run build:theme && mkdir -p ../../src/assets/theme-future/ && cp -r ../../packages/theme-future/lib/* ../../src/assets/theme-future/ && mkdir -p ../../src/assets/theme-future-scss/ && cp -r ../../packages/theme-future/src/* ../../src/assets/theme-future-scss' -R -D .",
-    "dev:iconfont": "watchmedo shell-command -p './extra/svg-icon/*.svg' -c 'npm run build:iconfont' -R -D .",
-    "unit": "jest --config test/unit/jest.conf.js --coverage",
-    "e2e": "node test/e2e/runner.js",
-    "test": "npm run unit && npm run e2e",
-    "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs",
-    "build:iconfont": "node build/build_iconfont.js",
-    "build:theme": "cd ./packages/theme-future/ && npm run build && cd - && mkdir -p ./src/assets/theme-future/ && cp -r ./packages/theme-future/lib/* ./src/assets/theme-future/"
+    "serve": "vite preview"
   },
   "dependencies": {
     "@antv/data-set": "^0.11.8",
@@ -48,9 +39,14 @@
     "@vitejs/plugin-vue": "^1.2.2",
     "@vue/compiler-sfc": "^3.0.11",
     "autoprefixer": "^10.2.5",
+    "eslint": "^7.26.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-vue": "^7.9.0",
     "node-sass": "^6.0.0",
     "postcss-import": "^14.0.2",
     "postcss-url": "^10.1.3",
+    "prettier": "^2.3.0",
     "sass": "^1.32.13",
     "vite": "^2.3.3"
   },

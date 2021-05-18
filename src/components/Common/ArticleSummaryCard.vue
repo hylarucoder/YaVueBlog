@@ -1,8 +1,14 @@
 <template>
-  <article class="article-summary-card col-sm-12 col-md-6 col-xl-6 col-lg-6 col-4">
+  <article
+    class="article-summary-card col-sm-12 col-md-6 col-xl-6 col-lg-6 col-4"
+  >
     <div class="article-summary-inner">
       <router-link class="thumbnail" :to="'/blog/post/' + article.title">
-        <span style="background-image:url(/static/images/shoes.jpg)" alt="" class="thumbnail-image"></span>
+        <span
+          style="background-image: url(/static/images/shoes.jpg);"
+          alt=""
+          class="thumbnail-image"
+        ></span>
         <div class="article-meta thumbnail-meta">
           <div class="article-favor u-gutter">
             <span class="iconfont iconfont-heart"></span>
@@ -25,7 +31,10 @@
       </router-link>
       <div class="article-meta">
         <div class="article-category u-gutter">
-          <router-link class="article-category-link" :to="'/blog/category/' + article.category.id">
+          <router-link
+            class="article-category-link"
+            :to="'/blog/category/' + article.category.id"
+          >
             {{ article.category.name }}
           </router-link>
         </div>
@@ -35,7 +44,11 @@
       </div>
       <div class="article-meta">
         <div class="article-tags">
-          <router-link :to="`/blog/tags/${item.id}`" v-for="item in article.tags" :key="item.id">
+          <router-link
+            :to="`/blog/tags/${item.id}`"
+            v-for="item in article.tags"
+            :key="item.id"
+          >
             <span class="label label-rounded">
               {{ item.name }}
             </span>
@@ -47,17 +60,14 @@
 </template>
 
 <script>
-  // {{ article.content.length }}
-  export default {
-    name: 'article-summary-card',
-    data() {
-      return {}
-    },
-    props: [
-      'article'
-    ]
-  }
+// {{ article.content.length }}
+export default {
+  name: "article-summary-card",
+  data() {
+    return {}
+  },
+  props: ["article"],
+}
 </script>
 
-<style>
-</style>
+<style></style>

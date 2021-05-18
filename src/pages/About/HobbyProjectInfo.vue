@@ -1,5 +1,5 @@
 <template>
-  <div class="column col-8 col-mx-auto resume-container ">
+  <div class="column col-8 col-mx-auto resume-container">
     <div class="columns">
       <div class="column col-12">
         <div class="h3 resume-container-header" id="hobby-project-info">
@@ -9,7 +9,10 @@
       <div class="column col-3">
         <div class="card">
           <div class="card-image">
-            <img src="https://picturepan2.github.io/spectre/img/macos-sierra.jpg" class="img-responsive">
+            <img
+              src="https://picturepan2.github.io/spectre/img/macos-sierra.jpg"
+              class="img-responsive"
+            />
           </div>
           <div class="card-header">
             <div class="card-title h5">YaVueBlog</div>
@@ -26,7 +29,10 @@
       <div class="column col-3">
         <div class="card">
           <div class="card-image">
-            <img src="https://picturepan2.github.io/spectre/img/macos-sierra.jpg" class="img-responsive">
+            <img
+              src="https://picturepan2.github.io/spectre/img/macos-sierra.jpg"
+              class="img-responsive"
+            />
           </div>
           <div class="card-header">
             <div class="card-title h5">YaDjangoBlog</div>
@@ -43,7 +49,10 @@
       <div class="column col-3">
         <div class="card">
           <div class="card-image">
-            <img src="https://picturepan2.github.io/spectre/img/macos-sierra.jpg" class="img-responsive">
+            <img
+              src="https://picturepan2.github.io/spectre/img/macos-sierra.jpg"
+              class="img-responsive"
+            />
           </div>
           <div class="card-header">
             <div class="card-title h5">danmu.fm</div>
@@ -60,7 +69,10 @@
       <div class="column col-3">
         <div class="card">
           <div class="card-image">
-            <img src="https://picturepan2.github.io/spectre/img/macos-sierra.jpg" class="img-responsive">
+            <img
+              src="https://picturepan2.github.io/spectre/img/macos-sierra.jpg"
+              class="img-responsive"
+            />
           </div>
           <div class="card-header">
             <div class="card-title h5">摔倒监控系统</div>
@@ -76,17 +88,16 @@
       </div>
     </div>
   </div>
-
 </template>
 
 <script>
-  export default {
-    name: 'BasicInfo',
-    components: {},
-    data() {
-      return {
-        msg: 'Welcome to Your Vue.js App'
-      }
+export default {
+  name: "BasicInfo",
+  components: {},
+  data() {
+    return {
+      msg: "Welcome to Your Vue.js App",
     }
-  }
+  },
+}
 </script>

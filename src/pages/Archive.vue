@@ -34,25 +34,23 @@
           </div>
         </div>
       </main>
-      <nav class="g-holygrail__nav">
-      </nav>
-      <aside class="g-holygrail__ads">
-      </aside>
+      <nav class="g-holygrail__nav"></nav>
+      <aside class="g-holygrail__ads"></aside>
     </div>
   </div>
 </template>
 
 <script>
-import {fetchPostArchive} from '../api/blog';
-import Footer from "./commons/Footer.vue";
-import ArticleSummaryCard from "../components/Common/ArticleSummaryCard.vue";
-import ProfileCard from "./commons/ProfileCard.vue";
-import PromotionCard from "./commons/PromotionCard.vue";
-import CategoryCard from "./commons/CategoryCard.vue";
-import TagsCard from "./commons/TagsCard.vue";
+import { fetchPostArchive } from "../api/blog"
+import Footer from "./commons/Footer.vue"
+import ArticleSummaryCard from "../components/Common/ArticleSummaryCard.vue"
+import ProfileCard from "./commons/ProfileCard.vue"
+import PromotionCard from "./commons/PromotionCard.vue"
+import CategoryCard from "./commons/CategoryCard.vue"
+import TagsCard from "./commons/TagsCard.vue"
 
 export default {
-  name: 'ArchivePage',
+  name: "ArchivePage",
   components: {
     Footer,
     ArticleSummaryCard,
@@ -63,16 +61,15 @@ export default {
   },
   data() {
     return {
-      months: []
+      months: [],
     }
   },
   created() {
-    fetchPostArchive({}).then(res => {
-      this.months = res.results;
+    fetchPostArchive({}).then((res) => {
+      this.months = res.results
     })
-  }
+  },
 }
 </script>
 
-<style>
-</style>
+<style></style>
