@@ -242,7 +242,7 @@ let skillBoards = [
       },
       {
         name: 'Vue 全家桶',
-        value: 'vuex / vue-router'
+        value: 'vuex / vue-routes'
       },
       {
         name: '开发时依赖',

@@ -114,7 +114,7 @@
         this.fetchArticles('page/' + value)
         /**
          * 居然把param给转义了,那只能华南个方式来了.
-         *this.$router.replace(
+         *this.$routes.replace(
          *  {
          *    name: 'blogposts',
          *    params: {
@@ -125,7 +125,7 @@
          *);
          */
         // let params = this.$route.params;
-        // this.$router.replace(
+        // this.$routes.replace(
         //   {
         //     name: 'blogposts',
         //     params: {
