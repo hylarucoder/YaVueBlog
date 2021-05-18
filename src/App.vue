@@ -1,39 +1,43 @@
 <template>
   <div id="app">
     <Header></Header>
-    <router-view/>
+    <router-view />
     <Footer></Footer>
   </div>
 </template>
 
 <script>
+import Header from "./pages/commons/Header.vue"
+import Footer from "./pages/commons/Footer.vue"
+
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    Header: () => import('./pages/commons/Header.vue'),
-    Footer: () => import('./pages/commons/Footer.vue'),
-  }
+    Header,
+    Footer,
+  },
 }
 </script>
 
 <style lang="scss">
+$primary-color: #37b24d;
+$dark-color: #2b5732;
+$body-bg: #f9f9f9;
+@import "../node_modules/spectre.css/src/spectre-icons.scss";
+@import "../node_modules/spectre.css/src/spectre.scss";
+@import "../node_modules/spectre.css/src/spectre-exp.scss";
+@import "./assets/styles/index.scss";
+// @import './assets/theme-future/index.css';
+a {
+  &:focus,
+  &:hover,
+  &:active,
+  &.active {
+    text-decoration: none;
+    box-shadow: 0 0 0 0;
+  }
+}
 
-  $primary-color: #37b24d;
-  $dark-color: #2b5732;
-  $body-bg: #f9f9f9;
-  @import '~spectre.css/src/spectre-icons.scss';
-  @import '~spectre.css/src/spectre.scss';
-  @import '~spectre.css/src/spectre-exp.scss';
-  @import './assets/theme-future/index.css';
-  a {
-    &:focus,
-    &:hover,
-    &:active,
-    &.active {
-      text-decoration: none;
-      box-shadow: 0 0 0 0;
-    }
-  }
-  #app {
-  }
+#app {
+}
 </style>

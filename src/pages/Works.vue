@@ -55,31 +55,36 @@
           </div>
         </div>
       </main>
-      <nav class="g-holygrail__nav">
-      </nav>
-      <aside class="g-holygrail__ads">
-      </aside>
+      <nav class="g-holygrail__nav"></nav>
+      <aside class="g-holygrail__ads"></aside>
     </div>
   </div>
 </template>
 
 <script>
-  export default {
-    name: 'Gallery',
-    components: {
-      Footer: () => import('./commons/Footer.vue'),
-      PromotionCard: () => import('./commons/PromotionCard.vue'),
-      CategoryCard: () => import('./commons/CategoryCard.vue'),
-      TagsCard: () => import('./commons/TagsCard.vue'),
-      ProfileCard: () => import('./commons/ProfileCard.vue')
-    },
-    data () {
-      return {
-        msg: 'Welcome to Your Vue.js App'
-      }
+import Footer from "./commons/Footer.vue"
+import ArticleSummaryCard from "../components/Common/ArticleSummaryCard.vue"
+import ProfileCard from "./commons/ProfileCard.vue"
+import PromotionCard from "./commons/PromotionCard.vue"
+import CategoryCard from "./commons/CategoryCard.vue"
+import TagsCard from "./commons/TagsCard.vue"
+
+export default {
+  name: "Gallery",
+  components: {
+    Footer,
+    ArticleSummaryCard,
+    ProfileCard,
+    PromotionCard,
+    CategoryCard,
+    TagsCard,
+  },
+  data() {
+    return {
+      msg: "Welcome to Your Vue.js App",
     }
-  }
+  },
+}
 </script>
 
-<style>
-</style>
+<style></style>

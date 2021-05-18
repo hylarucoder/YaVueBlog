@@ -7,10 +7,18 @@
         </div>
       </div>
       <div class="column col-3 u-flex-center">
-        <img class="resume-avatar" src="https://avatars3.githubusercontent.com/u/5625783" alt="">
+        <img
+          class="resume-avatar"
+          src="https://avatars3.githubusercontent.com/u/5625783"
+          alt=""
+        />
       </div>
       <div class="column col-3 u-flex-center">
-        <a class="resume-name" target="_blank" href="https://github.com/twocucao">
+        <a
+          class="resume-name"
+          target="_blank"
+          href="https://github.com/twocucao"
+        >
           twocucao
         </a>
       </div>
@@ -59,18 +67,18 @@
         <div class="datagrid">
           <table>
             <tbody>
-            <tr>
-              <td>电子邮箱</td>
-              <td>twocucao@gmail.com</td>
-            </tr>
-            <tr>
-              <td>我的小站</td>
-              <td>http://twocucao.xyz</td>
-            </tr>
-            <tr>
-              <td>知乎专栏</td>
-              <td>http://zhuanlan.zhihu.com/twocucao</td>
-            </tr>
+              <tr>
+                <td>电子邮箱</td>
+                <td>twocucao@gmail.com</td>
+              </tr>
+              <tr>
+                <td>我的小站</td>
+                <td>http://twocucao.xyz</td>
+              </tr>
+              <tr>
+                <td>知乎专栏</td>
+                <td>http://zhuanlan.zhihu.com/twocucao</td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -79,18 +87,18 @@
         <div class="datagrid">
           <table>
             <tbody>
-            <tr>
-              <td>爱Python</td>
-              <td>http://love-python.cn</td>
-            </tr>
-            <tr>
-              <td>学校</td>
-              <td>常州大学本科</td>
-            </tr>
-            <tr>
-              <td>专业</td>
-              <td>软件工程系</td>
-            </tr>
+              <tr>
+                <td>爱Python</td>
+                <td>http://love-python.cn</td>
+              </tr>
+              <tr>
+                <td>学校</td>
+                <td>常州大学本科</td>
+              </tr>
+              <tr>
+                <td>专业</td>
+                <td>软件工程系</td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -100,13 +108,13 @@
 </template>
 
 <script>
-  export default {
-    name: 'BasicInfo',
-    components: {},
-    data() {
-      return {
-        msg: 'Welcome to Your Vue.js App'
-      }
+export default {
+  name: "BasicInfo",
+  components: {},
+  data() {
+    return {
+      msg: "Welcome to Your Vue.js App",
     }
-  }
+  },
+}
 </script>

@@ -1,29 +1,12 @@
-// https://eslint.org/docs/user-guide/configuring
-
 module.exports = {
-  root: true,
-  parser: 'babel-eslint',
-  parserOptions: {
-    sourceType: 'module'
-  },
-  env: {
-    browser: true,
-  },
-  // https://github.com/standard/standard/blob/master/docs/RULES-en.md
-  extends: 'standard',
-  // required to lint *.vue files
-  plugins: [
-    'html'
-  ],
-  // add your custom rules here
-  rules: {
-    'semi': 'off',
-    'space-before-function-paren': 'off',
-    'padded-blocks': 'off',
-    'comma-dangle': 'off',
-    // allow async-await
-    'generator-star-spacing': 'off',
-    // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
-  }
+    extends: [
+        // add more generic rulesets here, such as:
+        // 'eslint:recommended',
+        'plugin:vue/vue3-recommended',
+        // 'plugin:vue/recommended' // Use this if you are using Vue.js 2.x.
+    ],
+    rules: {
+        // override/add rules settings here, such as:
+        // 'vue/no-unused-vars': 'error'
+    }
 }

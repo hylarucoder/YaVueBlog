@@ -22,23 +22,29 @@
 </template>
 
 <script>
-  export default {
-    name: 'AboutPage',
-    components: {
-      'BasicInfo': () => import('./About/BasicInfo.vue'),
-      'SkillInfo': () => import('./About/SkillInfo.vue'),
-      'WorkInfo': () => import('./About/WorkInfo.vue'),
-      'ProjectInfo': () => import('./About/ProjectInfo.vue'),
-      'HobbyInfo': () => import('./About/HobbyInfo.vue'),
-      'HobbyProjectInfo': () => import('./About/HobbyProjectInfo.vue'),
-    },
-    data() {
-      return {
-        msg: 'Welcome to Your Vue.js App'
-      }
+import BasicInfo from "./About/BasicInfo.vue"
+import SkillInfo from "./About/SkillInfo.vue"
+import WorkInfo from "./About/WorkInfo.vue"
+import ProjectInfo from "./About/ProjectInfo.vue"
+import HobbyInfo from "./About/HobbyInfo.vue"
+import HobbyProjectInfo from "./About/HobbyProjectInfo.vue"
+
+export default {
+  name: "AboutPage",
+  components: {
+    BasicInfo,
+    SkillInfo,
+    WorkInfo,
+    ProjectInfo,
+    HobbyInfo,
+    HobbyProjectInfo,
+  },
+  data() {
+    return {
+      msg: "Welcome to Your Vue.js App",
     }
-  }
+  },
+}
 </script>
 
-<style>
-</style>
+<style></style>
