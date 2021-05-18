@@ -1,0 +1,90 @@
+.ft-intro-card {
+  margin-top: 20px;
+  padding: 30px;
+  width: 100%;
+  height: 500px;
+  background-color: #fff;
+  position: relative;
+  border-radius: 3px;
+  transition: box-shadow 0.2s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  color: #495057;
+  text-align: left;
+  .ft-intro-card__title {
+    margin-top: 20px;
+    text-align: left;
+    .ft-intro-card__name {
+      font-size: 26px;
+      font-weight: 600;
+      line-height: 30px;
+    }
+    .ft-intro-card__quote {
+      margin-left: 12px;
+      font-size: 18px;
+      white-space: nowrap;
+    }
+  }
+  .ft-intro-card__content {
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #262626;
+    margin: 18px;
+
+    .ft-intro-card__content-item {
+      display: flex;
+      margin-bottom: 18px;
+
+      .ft-intro-card__content-item-label {
+        width: 100px;
+        margin-right: 37px;
+        font-weight: 600;
+      }
+      .ft-intro-card__content-item-value {
+      }
+    }
+  }
+    .ft-intro-card__desc {
+      font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+      text-align: justify;
+      padding-left: 2.5rem;
+      padding-top: 1rem;
+      p {
+        margin: 0 0 0.5rem;
+      }
+    }
+}
+
+.ft-card {
+  background-color: #fff;
+  position: relative;
+  border-radius: 3px;
+  transition: box-shadow 0.2s;
+  box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.1);
+  color: #495057;
+  text-align: center;
+  vertical-align: center;
+}
+
+.ft-card-info {
+}
+
+.ft-social-card {
+  font-size: 20px;
+  background-color: rgba(174, 238, 21, 0.8);
+  padding: 20px;
+  min-height: 90px;
+  transition: color 0.2s, box-shadow 0.2s;
+  display: block;
+  border-radius: 3px;
+  margin: 15px 7.5px;
+  text-align: center;
+  span {
+    font-size: 40px;
+    color: #ea6f5a;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}

@@ -50,41 +50,38 @@
 </template>
 
 <script>
-  import {fetchBlogPost} from '../../api/blog';
+import {fetchBlogPost} from '../../api/blog';
 
-  export default {
-    name: 'BlogPage',
-    components: {
-      ArticleCard: () => import('../../components/Common/ArticleCard.vue'),
-    },
-    data() {
-      return {
-        article: '',
-        articleToc: undefined
-      }
-    },
-    watch: {
-      '$route.params': function () {
-        this.initArticle()
-      }
-    },
-    created() {
+export default {
+  name: 'BlogPage',
+  data() {
+    return {
+      article: '',
+      articleToc: undefined
+    }
+  },
+  watch: {
+    '$route.params': function () {
       this.initArticle()
+    }
+  },
+  created() {
+    this.initArticle()
+  },
+  mounted() {
+  },
+  methods: {
+    initArticleToc: function (v) {
+      this.articleToc = v;
     },
-    mounted() {
-    },
-    methods: {
-      initArticleToc: function (v) {
-        this.articleToc = v;
-      },
-      initArticle: function () {
-        let title = this.$route.params.title;
-        fetchBlogPost(title).then((res) => {
-          this.article = res;
-        })
-      }
+    initArticle: function () {
+      let title = this.$route.params.title;
+      fetchBlogPost(title).then((res) => {
+        this.article = res;
+      })
     }
   }
+}
 </script>
 
 <style>

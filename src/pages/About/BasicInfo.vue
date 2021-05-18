@@ -100,13 +100,13 @@
 </template>
 
 <script>
-  export default {
-    name: 'BasicInfo',
-    components: {},
-    data() {
-      return {
-        msg: 'Welcome to Your Vue.js App'
-      }
+export default {
+  name: 'BasicInfo',
+  components: {},
+  data() {
+    return {
+      msg: 'Welcome to Your Vue.js App'
     }
   }
+}
 </script>

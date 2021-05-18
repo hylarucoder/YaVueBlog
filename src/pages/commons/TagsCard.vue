@@ -17,21 +17,21 @@
 </template>
 
 <script>
-  import {fetchPostTags} from '../../api/blog';
+import {fetchPostTags} from '../../api/blog';
 
-  export default {
-    name: 'ProfileCard',
-    data() {
-      return {
-        tags: []
-      };
-    },
-    created() {
-      fetchPostTags().then(res => {
-        this.tags = res.results;
-      })
-    }
-  };
+export default {
+  name: 'ProfileCard',
+  data() {
+    return {
+      tags: []
+    };
+  },
+  created() {
+    fetchPostTags().then(res => {
+      this.tags = res.results;
+    })
+  }
+};
 </script>
 
 <style>

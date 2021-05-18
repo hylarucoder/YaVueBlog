@@ -49,23 +49,27 @@
 </template>
 
 <script>
-  export default {
-    name: 'Gallery',
-    components: {
-      Footer: () => import('./commons/Footer.vue'),
-      ArticleSummaryCard: () => import('../components/Common/ArticleSummaryCard.vue'),
-      PromotionCard: () => import('./commons/PromotionCard.vue'),
-      CategoryCard: () => import('./commons/CategoryCard.vue'),
-      TagsCard: () => import('./commons/TagsCard.vue'),
-      ProfileCard: () => import('./commons/ProfileCard.vue')
-    },
-    data () {
-      return {
-        msg: 'Welcome to Your Vue.js App'
-      }
-    }
-  }
-</script>
+import Footer from "./commons/Footer.vue";
+import ArticleSummaryCard from "../components/Common/ArticleSummaryCard.vue";
+import ProfileCard from "./commons/ProfileCard.vue";
+import PromotionCard from "./commons/PromotionCard.vue";
+import CategoryCard from "./commons/CategoryCard.vue";
+import TagsCard from "./commons/TagsCard.vue";
 
-<style>
-</style>
+export default {
+  name: 'Gallery',
+  data() {
+    return {
+      msg: 'Welcome to Your Vue.js App'
+    }
+  },
+  components: {
+    Footer,
+    ArticleSummaryCard,
+    ProfileCard,
+    PromotionCard,
+    CategoryCard,
+    TagsCard,
+  },
+}
+</script>

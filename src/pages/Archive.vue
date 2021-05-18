@@ -43,28 +43,35 @@
 </template>
 
 <script>
-  import {fetchPostArchive} from '../api/blog';
+import {fetchPostArchive} from '../api/blog';
+import Footer from "./commons/Footer.vue";
+import ArticleSummaryCard from "../components/Common/ArticleSummaryCard.vue";
+import ProfileCard from "./commons/ProfileCard.vue";
+import PromotionCard from "./commons/PromotionCard.vue";
+import CategoryCard from "./commons/CategoryCard.vue";
+import TagsCard from "./commons/TagsCard.vue";
 
-  export default {
-    name: 'ArchivePage',
-    components: {
-      ArticleSummaryCard: () => import('../components/Common/ArticleSummaryCard.vue'),
-      PromotionCard: () => import('./commons/PromotionCard.vue'),
-      CategoryCard: () => import('./commons/CategoryCard.vue'),
-      TagsCard: () => import('./commons/TagsCard.vue'),
-      ProfileCard: () => import('./commons/ProfileCard.vue')
-    },
-    data() {
-      return {
-        months: []
-      }
-    },
-    created() {
-      fetchPostArchive({ }).then(res => {
-        this.months = res.results;
-      })
+export default {
+  name: 'ArchivePage',
+  components: {
+    Footer,
+    ArticleSummaryCard,
+    ProfileCard,
+    PromotionCard,
+    CategoryCard,
+    TagsCard,
+  },
+  data() {
+    return {
+      months: []
     }
+  },
+  created() {
+    fetchPostArchive({}).then(res => {
+      this.months = res.results;
+    })
   }
+}
 </script>
 
 <style>

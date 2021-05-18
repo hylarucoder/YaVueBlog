@@ -15,7 +15,7 @@
           <meta itemprop="name" content="MG的编程小屋">
         </span>
         <header class="post-header">
-          <h1 class="post-title" itemprop="name headline">{{ article["title"]}} </h1>
+          <h1 class="post-title" itemprop="name headline">{{ article["title"] }} </h1>
           <div class="post-meta">
           <span class="post-time">
               <span class="post-meta-item-icon">
@@ -47,7 +47,7 @@
                 </span>
               <span class="post-meta-item-text">字数统计</span>
               <span title="字数统计">
-                   {{ article["char_num"]}}
+                   {{ article["char_num"] }}
                 </span>
               <span class="post-meta-divider">|</span>
               <span class="post-meta-item-icon">
@@ -89,50 +89,52 @@
 </template>
 
 <script>
-  export default {
-    name: 'article-card',
-    props: {
-      article: {
-        type: [Object, String],
-        default: {
-          'id': 61,
-          'title': '关于 CSS 你应该知道的一切',
-          'content': '',
-          'vote_num': 0,
-          'category': {
-            'id': 14,
-            'name': '未分类',
+import * as VueMarkdown from './VueMarkdown.vue'
+
+export default {
+  name: 'article-card',
+  props: {
+    article: {
+      type: [Object, String],
+      default: {
+        'id': 61,
+        'title': '关于 CSS 你应该知道的一切',
+        'content': '',
+        'vote_num': 0,
+        'category': {
+          'id': 14,
+          'name': '未分类',
+          'order_num': 0
+        },
+        'tags': [
+          {
+            'id': 65,
+            'name': '前端开发',
             'order_num': 0
           },
-          'tags': [
-            {
-              'id': 65,
-              'name': '前端开发',
-              'order_num': 0
-            },
-            {
-              'id': 66,
-              'name': 'CSS',
-              'order_num': 0
-            }
-          ],
-          'author': 1,
-          'publish_date': '2017-12-28T18:41:47+08:00'
-        }
-      },
-    },
-    data() {
-      return {}
-    },
-    components: {
-      'vue-markdown': () => import('./VueMarkdown.vue')
-    },
-    methods: {
-      handleTocReady: function (v) {
-        this.$emit('articleTocReady', v)
+          {
+            'id': 66,
+            'name': 'CSS',
+            'order_num': 0
+          }
+        ],
+        'author': 1,
+        'publish_date': '2017-12-28T18:41:47+08:00'
       }
+    },
+  },
+  data() {
+    return {}
+  },
+  components: {
+    VueMarkdown
+  },
+  methods: {
+    handleTocReady: function (v) {
+      this.$emit('articleTocReady', v)
     }
   }
+}
 </script>
 
 <style lang="scss">

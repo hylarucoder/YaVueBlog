@@ -10,9 +10,7 @@ import {routes} from "./routes";
 
 // import './directives'
 // import './filters'
-// import * as VueMarkdown from './components/Common/VueMarkdown.vue';
-
-// Vue.component('vue-markdown', VueMarkdown)
+import * as VueMarkdown from './components/Common/VueMarkdown.vue';
 
 export const router = createRouter({
     history: createWebHistory(),
@@ -20,4 +18,5 @@ export const router = createRouter({
 })
 const app = createApp(App);
 app.use(router)
+app.component('vue-markdown', VueMarkdown)
 app.mount('#app')
